@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">Mobile_Amethyst_Audio</string>
+    <string name="amethyst_audio_name" translatable="false">Amethyst Audio</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_confirm">Confirm</string>
+    <string name="login_have_no_account">Have no account?</string>
+    <string name="login_create"><u>Create</u></string>
+    <string name="login_reset_password"><u>Reset password</u></string>
+</resources>
