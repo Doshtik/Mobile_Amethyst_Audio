@@ -7,15 +7,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.lizyakin.mobile_amethyst_audio.R
-import com.lizyakin.mobile_amethyst_audio.viewmodels.SearchViewModel
+import com.lizyakin.mobile_amethyst_audio.viewmodels.OnlineUserLibraryViewModel
 
-class SearchFragment : Fragment() {
+class OnlineUserLibraryFragment : Fragment() {
 
     companion object {
-        fun newInstance() = SearchFragment()
+        fun newInstance() = OnlineUserLibraryFragment()
     }
 
-    private val viewModel: SearchViewModel by viewModels()
+    private val viewModel: OnlineUserLibraryViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +24,6 @@ class SearchFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        return inflater.inflate(R.layout.fragment_search, container, false)
+        return inflater.inflate(R.layout.fragment_online_user_library, container, false)
     }
 }

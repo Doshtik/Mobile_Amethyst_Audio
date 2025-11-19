@@ -1,15 +1,14 @@
-package com.lizyakin.mobile_amethyst_audio
+package com.lizyakin.mobile_amethyst_audio.activities
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.lizyakin.mobile_amethyst_audio.R
 
-class MainActivity : AppCompatActivity() {
+class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.fragment_login)
     }
 }

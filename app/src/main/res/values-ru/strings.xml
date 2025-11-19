@@ -7,4 +7,12 @@
     <string name="login_have_no_account">Нет аккаунта?</string>
     <string name="login_create"><u>Создать</u></string>
     <string name="login_reset_password"><u>Сбросить пароль</u></string>
+    <string name="in_trand">Trands</string>
+    <string name="watch_all">Watch all</string>
+    <string name="search">Search</string>
+    <string name="new_albums">New albums</string>
+    <string name="to_record">To Record</string>
+    <string name="to_search">To Search</string>
+    <string name="to_library">To Library</string>
+    <string name="to_user_profile">To User Profile</string>
 </resources>

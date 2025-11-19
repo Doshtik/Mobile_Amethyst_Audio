@@ -3,11 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/myRecordFragment">
 
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.lizyakin.mobile_amethyst_audio.fragments.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/myRecordFragment"
+        android:name="com.lizyakin.mobile_amethyst_audio.fragments.MyRecordFragment"
+        android:label="fragment_my_record"
+        tools:layout="@layout/fragment_my_record" />
+    <fragment
+        android:id="@+id/onlineUserLibraryFragment"
+        android:name="com.lizyakin.mobile_amethyst_audio.fragments.OnlineUserLibraryFragment"
+        android:label="fragment_online_user_library"
+        tools:layout="@layout/fragment_online_user_library" />
+    <fragment
+        android:id="@+id/offlineUserLibraryFragment"
+        android:name="com.lizyakin.mobile_amethyst_audio.fragments.OfflineUserLibraryFragment"
+        android:label="fragment_offline_user_library"
+        tools:layout="@layout/fragment_offline_user_library" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.lizyakin.mobile_amethyst_audio.fragments.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.lizyakin.mobile_amethyst_audio.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.lizyakin.mobile_amethyst_audio.fragments.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
 </navigation>
