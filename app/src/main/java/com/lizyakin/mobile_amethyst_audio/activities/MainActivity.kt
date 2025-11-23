@@ -5,6 +5,7 @@ import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import com.lizyakin.mobile_amethyst_audio.R
 
@@ -15,15 +16,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         try {
-            setupBottomNavigation()
+            var navController = findNavController(R.id.nav_host_fragment)
+            setupBottomNavigation(navController);
         } catch (e: Exception) {
             e.printStackTrace()
             Toast.makeText(this, "Navigation error: ${e.message}", Toast.LENGTH_LONG).show()
         }
     }
 
-    private fun setupBottomNavigation() {
-        val navController = findNavController(R.id.nav_host_fragment)
+    private fun setupBottomNavigation(navController: NavController,) {
 
         findViewById<ImageButton>(R.id.move_to_my_records).setOnClickListener {
             navController.navigate(R.id.myRecordFragment)
