@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="login_email">Email или псевдоним</string>
-    <string name="login_password">Пароль</string>
-    <string name="login_confirm">Подтвердить</string>
+    <string name="edit_email">Email или псевдоним</string>
+    <string name="edit_password">Пароль</string>
+    <string name="button_confirm">Подтвердить</string>
     <string name="login_have_no_account">Нет аккаунта?</string>
     <string name="login_create"><u>Создать</u></string>
     <string name="login_reset_password"><u>Сбросить пароль</u></string>
