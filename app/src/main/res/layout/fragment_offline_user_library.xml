@@ -1,60 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.OfflineUserLibraryFragment"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
+        android:padding="10dp"
         android:orientation="horizontal">
 
-        <Button
+        <android.widget.Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            android:text="Library" />
+            android:background="@drawable/shape_button"
+            android:text="Library"
+            android:textColor="#ffffff"/>
 
-        <Button
+        <android.widget.Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_weight="1"
-            android:text="Downloaded" />
+            android:background="@drawable/shape_button"
+            android:text="Downloaded"
+            android:textColor="#ffffff"/>
 
     </LinearLayout>
 
-    <LinearLayout
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="5dp"
+        android:rowCount="2">
 
-        <Button
+        <LinearLayout
             android:id="@+id/button_playlists"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="5dp"
-            android:text="Playlists"
-            android:textSize="16sp" />
+            android:background="@drawable/shape_linear_layout"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
-        <Button
+            <ImageView
+                android:id="@+id/image_playlists"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="5dp"
+                app:cardCornerRadius="5dp"
+                android:background="#ffffff"
+                app:strokeWidth="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Playlists"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
             android:id="@+id/button_albums"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginStart="5dp"
-            android:text="Albums"
-            android:textSize="16sp" />
+            android:background="@drawable/shape_linear_layout"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/image_albums"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="5dp"
+                app:cardCornerRadius="5dp"
+                android:background="#ffffff"
+                app:strokeWidth="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Albums"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </GridLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -19,51 +18,68 @@
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph" />
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_margin="10dp"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:background="@drawable/shape_linear_layout"
+        android:padding="10dp">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/move_to_my_records"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:src=""
+            android:contentDescription="@string/to_record"
+            android:padding="5dp"
             android:scaleType="centerInside"
-            android:contentDescription="@string/to_record"/>
+            android:src="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/move_to_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/move_to_search"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="10dp"
-            android:layout_weight="1"
+            android:contentDescription="@string/to_search"
+            android:padding="5dp"
+            android:scaleType="centerInside"
             android:src="@drawable/ic_search"
-            android:scaleType="centerInside"
-            android:contentDescription="@string/to_search"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/move_to_library"
+            app:layout_constraintStart_toEndOf="@+id/move_to_my_records"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/move_to_library"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="10dp"
-            android:layout_weight="1"
+            android:contentDescription="@string/to_library"
+            android:padding="5dp"
+            android:scaleType="centerInside"
             android:src="@drawable/ic_library"
-            android:scaleType="centerInside"
-            android:contentDescription="@string/to_library"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/move_to_user_profile"
+            app:layout_constraintStart_toEndOf="@+id/move_to_search"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/move_to_user_profile"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:src="@drawable/ic_user_profile"
+            android:contentDescription="@string/to_user_profile"
+            android:padding="5dp"
             android:scaleType="centerInside"
-            android:contentDescription="@string/to_user_profile"/>
-    </LinearLayout>
+            android:src="@drawable/ic_user_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/move_to_library"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
